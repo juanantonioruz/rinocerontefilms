@@ -1,9 +1,16 @@
 @futura_medium:futura_medium;
+@futura_book:futura_book;
 @verdana:verdana;
 @color_colorao:#c24032;
 @color_gris_claro:#f6f6f6;
 @color_gris_oscuro:#878787;
 @ancho_modulo_informacion:290px;
+@font-face
+{
+    font-family: @futura_book;
+    src: url('fuentes/Futura/FuturaStd-Heavy.otf');
+    src: local(@futura_book), url('fuentes/Futura/FuturaStd-Heavy.otf') format('opentype');
+}
 @font-face
 {
     font-family: @futura_medium;
@@ -95,6 +102,7 @@ div#footer {
 	#footer_menu {
 	  color: @color_colorao;
 	  font-size: 13.5pt;
+	 
 	}
 	#footer_menu_izq {
 	  width: 284px;
@@ -257,5 +265,24 @@ hr{
 
 	
 }
+b{
+	font-family:@futura_book;
+	line-height: 2em;
+}
 
-
+ a {
+	  	color:@color_colorao; 
+  		text-decoration: none;
+    	  &:hover { 
+		  	font-family:@futura_book;
+			color:@color_gris_oscuro;    	  	
+		  }
+			
+		}
+a.opcion_seleccionada{
+				color:@color_gris_oscuro;    	  	
+				  &:hover { 
+		  	font-family:@futura_book;
+			color:@color_colorao;    	  	
+		  }
+		}
