@@ -151,21 +151,55 @@ div#quienes_somos_container {
 	div#texto_quienes_somos{
 		margin-top:10px;
 	}
+
+.cabecera_columna(){
+	.cabecera_info(11pt, 0px);
+			width:100%;		
+			margin-top:-8px;
+}	
+	
 	div.autor{
 		margin-top:35px;
 		width:@ancho_modulo_informacion;
 
 		div.cabecera_autor{
-			.cabecera_info(11pt, 0px);
-			width:100%;		
-			margin-top:-8px;
+			.cabecera_columna();
 		}
 		div.contenido_autor{
-		margin-top:10px;
+			margin-top:10px;
 		}
 		div.visual_autor{
 			width:100%;		
 		}
+	}
+	div.film{
+		margin-top:35px;
+		margin-right:27px;
+		float:left;
+		width:@ancho_modulo_informacion/2;
+			div.cabecera_film{
+			.cabecera_columna();
+			font-size:10pt;
+
+			/* padding-left:0px; */
+			/* padding-right:0px; */
+			}
+			div.contenido_film{
+			margin-top:10px;
+			text-align: justify;
+			}	
+			div.saber_mas_film{
+			margin-top:10px;
+			font-size:9pt;
+			color:@color_colorao;
+				text-align:right;
+				float:right;
+			}
+			div.img_mas{
+			float:right;
+			margin-top:8px;
+			margin-left:5px;
+			}
 	}
 	
 
