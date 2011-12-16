@@ -135,14 +135,23 @@ div#noticias_container {
 		}
 	}
 }
-div#quienes_somos_container {
+.container_basico(){
 	.margen_arriba();
   	font-family: @futura_medium;
 	color:@color_gris_oscuro;
 	font-size:10pt;
-
 	margin-left:86px;
 	margin-right:106px;
+}
+.cabecera_columna(){
+	.cabecera_info(11pt, 0px);
+			width:100%;		
+			margin-top:-8px;
+}	
+div#quienes_somos_container {
+	.container_basico();
+
+	
 
 	div#cabecera_quienes_somos{
 			width:@ancho_modulo_informacion;
@@ -152,11 +161,7 @@ div#quienes_somos_container {
 		margin-top:10px;
 	}
 
-.cabecera_columna(){
-	.cabecera_info(11pt, 0px);
-			width:100%;		
-			margin-top:-8px;
-}	
+
 	
 	div.autor{
 		margin-top:35px;
@@ -204,8 +209,53 @@ div#quienes_somos_container {
 	
 
 }
+div#encargo_container {
+	.container_basico();
 
+	div#encargo_col_izq{
+		width:399px;
+		
+		float:left;
+		margin-bottom:30px;
 
+	}
+	div#encargo_col_dcha{
+		width:236px;
 
+				float:right;
+	}
+	.titulo{
+		color:@color_colorao;
+		font-size:11pt;
+	}
+	.titulo_ficha{
+		.cabecera_columna();
+		text-align:left;
+		padding-left:5px;
+		margin-bottom:10px;
+		margin-top:0px;
+	}
+	.equipo_tecnico{
+		padding-left:20px;
+		padding-bottom:20px;
+		.titulo_tecnico{
+			font-variant: small-caps;
+			font-size:11pt;
+		}
+	}
+}
+.letra_colora{
+	color:@color_colorao;
+}
+hr{
+	border: 1px dotted @color_gris_oscuro;
+		margin-bottom:10px;
+			margin-top:10px;
+}
+.imagen_espacial{
+	margin-bottom:10px;
+
+	
+}
 
 
