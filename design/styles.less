@@ -26,7 +26,9 @@
 .bordea (@ancho: 1px, @colorito:red) {
  border: @ancho solid @colorito;
 }
-
+div.borde{
+	.bordea();
+}
 .margen_arriba(@margen:30px){
 	padding-top:@margen;
 }
@@ -47,9 +49,13 @@ body {
 div#container {
   margin: 85px auto;
   width: 855px;
-	#container_cabecera {
+	
+}
+.coloreaColorao{
+	  background-color: @color_colorao;
+}
+div#container_cabecera {
 	  background-color: @color_gris_claro;
-	  width: 100%;
 	  height: 70px;
 	  	#pastilla_roja_cabecera {
 		  background-color: @color_colorao;
@@ -83,20 +89,17 @@ div#container {
 		  color: @color_gris_oscuro;
 		}
 	}
-}
 
 div#container_body {
   margin-top: 12px;
-  background-color: @color_gris_claro;
-
+  background-color:@color_gris_claro;
 }
 
 div#footer {
-  padding: 20px 109px 30px 96px;
   background-image: url(imgs/footer.png);
   background-repeat: no-repeat;
   background-color: @color_gris_claro;
-  height: 40px;
+  height: 100px;
   font-family: @futura_medium;
   clear:both;
 	#footer_menu {
@@ -105,16 +108,17 @@ div#footer {
 	 
 	}
 	#footer_menu_izq {
-	  width: 284px;
-	  font-size: 0.78em;
-	  float: left;
+		padding-left:25px;
+	  font-size: 0.73em;
+	  
+
 	  text-align: center;
 	}
 	#footer_menu_dcha {
-	  font-size: 0.75em;
-	  float: right;
+	  font-size: 0.73em;
 	  text-align: center;
-	  width: 284px;
+	 		margin-left:-15px;
+
 	
 	}
 }
