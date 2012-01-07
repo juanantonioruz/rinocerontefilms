@@ -1,9 +1,13 @@
+soy el detalle de la pelicula
 <?php
 /**
  * @package WordPress
  * @subpackage Default_Theme
  */
-$valor_header=array("HACEMOS POR ENCARGO", "WE DO IT");
+ /*
+Template Name: Detalle_Pelicula
+*/
+$valor_header="...";
 include("header.php");
 
 ?>
@@ -45,6 +49,4 @@ include("header.php");
 
 
 
-<?php 
-include("footer.php");
- ?>
+<?php get_footer(); ?>

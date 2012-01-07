@@ -1,21 +1,20 @@
+SOY EL INDEX
 <?php
 /**
  * @package WordPress
  * @subpackage Default_Theme
  */
-$valor_header=array("HACEMOS POR ENCARGO", "WE DO IT");
-include("header.php");
 
-?>
+get_header(); ?>
 
-	
+	<div id="content" class="narrowcolumn" role="main">
 
-<?php if (have_posts()) : ?>
+	<?php if (have_posts()) : ?>
 
 		<?php while (have_posts()) : the_post(); ?>
 
 			<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-				<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h2>
+				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h2>
 				<small><?php the_time(__('F jS, Y', 'kubrick')) ?> <!-- by <?php the_author() ?> --></small>
 
 				<div class="entry">
@@ -42,9 +41,6 @@ include("header.php");
 
 	</div>
 
+<?php get_sidebar(); ?>
 
-
-
-<?php 
-include("footer.php");
- ?>
+<?php get_footer(); ?>
