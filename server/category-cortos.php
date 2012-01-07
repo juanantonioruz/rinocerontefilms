@@ -1,10 +1,9 @@
-soy la categoria cortos
 <?php
 /**
  * @package WordPress
  * @subpackage Default_Theme
  */
-$valor_header="CORTOS";
+$valor_header=array("CORTOS", "SHORTS)";
 include("header.php");
 $count = 0;
 
@@ -47,4 +46,6 @@ query_posts('showposts=4'); ?>
 
 
 
-<?php get_footer(); ?>
+<?php 
+include("footer.php");
+?>
