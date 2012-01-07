@@ -4,17 +4,18 @@
 
 function encuentra($patron, $texto)
 {
-$patron="@@@".$patron;
+$patronArroba="@@@";
 $resultado = array();
-$splitea=explode($patron, $texto);
+$splitea=explode($patronArroba, $texto);
+
 foreach ($splitea as $valor)
-if(strstr($valor,"@@@"))
-$resultado[]=str_replace( "@@@", "",$valor);
+if(strstr($valor,$patron."@"))
+$resultado[]=str_replace( $patron."@", "",$valor);
  return $resultado;
 }
 
 
-$ejemplo="hola que pasa con el ejemplo @@@autor@@@hola soy el autor askjfh lkasjdh fasd @@@autor@@@ pues yo soy el otro autor....";
+$ejemplo="hola que @@@descripcion@pasa con el ejemplo @@@autor@hola soy el autor askjfh lkasjdh fasd @@@autor@ pues yo soy el otro autor....";
 
 $autores=encuentra("autor", $ejemplo);
 foreach ($autores as $autor)
