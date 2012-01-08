@@ -1,0 +1,29 @@
+.letra_colora {
+  color: #c24032;
+}
+.texto_rojo {
+  color: #c24032;
+}
+.titulo_rojo_fondo_gris {
+  color: #c24032;
+    font-size: 11pt;
+}
+.texto_gris_medio {
+  color: #a3a3a3;
+}
+.texto_gris_oscuro {
+  color: #404040;
+}
+.titulo_blanco_ficha_roja {
+  background-color: #c24032;
+  color: #f6f6f6;
+  padding: 0px;
+  padding-top: 8px;
+  font-size: 11pt;
+ 
+  margin-top: -8px;
+  text-align: left;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}

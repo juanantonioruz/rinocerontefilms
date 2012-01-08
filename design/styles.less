@@ -3,7 +3,9 @@
 @verdana:verdana;
 @color_colorao:#c24032;
 @color_gris_claro:#f6f6f6;
-@color_gris_oscuro:#878787;
+@color_gris_medio:#A3A3A3;
+@color_gris_oscuro:#5E5E5E;
+@color_gris_mas_oscuro:#404040;
 @ancho_modulo_informacion:290px;
 @font-face
 {
@@ -41,8 +43,8 @@ div.borde{
 			font-size:@tamanyo_texto;
 }
 body {
-  /* background-image: url(http://rinocerontefilms.com/wp-content/uploads/2011/12/fondo21.png);
-  background-repeat: repeat; */
+   background-image: url(http://rinocerontefilms.com/wp-content/uploads/2011/12/fondo21.png);
+  background-repeat: repeat; 
   font-family:verdana;
 }
 
@@ -260,8 +262,18 @@ div#encargo_container {
 .letra_colora{
 	color:@color_colorao;
 }
+.texto_rojo{
+	color:@color_colorao;
+}
+.texto_gris_medio{
+	color:@color_gris_medio;
+}
+.texto_gris_oscuro{
+	color:@color_gris_mas_oscuro;
+}
+
 hr{
-	border: 1px dotted @color_gris_oscuro;
+	border: 1px dotted @color_gris_medio;
 		margin-bottom:10px;
 			margin-top:10px;
 }
