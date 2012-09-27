@@ -1,3 +1,12 @@
+Wordpress template!
+you can view the results in http://rinocerontefilms.com/es
+
+
+
+
+
+
+
 Estilos css para proyecto a desplegar en wordpress
 realizado con lesscss.org
 http://www.web-templates.nu/2008/08/31/get_the_content-with-formatting/
